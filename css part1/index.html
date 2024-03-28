@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /* 110 -> 100 + 10*/
+    #header .title{
+      color: red;
+    }
+
+    /* 1 +  100  + 10 + 1 + 10 + 10 + 1 */
+    section#header .container nav .items .item a{
+     color: green;
+     
+    }
+    /* 1. hitunglah nilai specity dari selektor diatas */
+    /* ghaffar -> 132 */
+    /* jo -> 102 */
+    /* naufan -> 133  v*/
+    /* fahrul -> 133 v*/
+    
+
+    /* 100 + 1 + 10 + 1 + 10 + 1 + 1 = 124 */
+    #header div.container ul.items li a{
+      color: yellow;
+      text-decoration: none; 
+      font-size: 18px;
+      font-weight: 500;
+    }
+    /* 2. hitunglah nilai specity dari selektor diatas */
+    /* rehan -> 124 */
+    /* azhar -> 124 */
+    /* syaful -> 124 */
+
+  /* 3.dari selektor diatas warna yg terapkan warna apa? */
+  /* 
+  hakim -> yellow 
+  thoywim -> yello
+  */
+  /* 4 */
+  /* 1 +  1 + 10 + 1 + 1 + 10 + 1 + 10 = 35*/
+  section div.container ul li.item a[href="/home"]{
+    color: orangered;
+  }
+
+  .item a {
+    color: red !important;
+  }
+
+  /* alfred -> 35 */
+  /* wafa -> 35 */
+  /* dimas -> 35 */
+  </style>
+</head>
+<body>
+  <section id="header">
+    <h1 class="title">helo world</h1>
+    <div class="container">
+      <nav class="navbar">
+        <ul class="items">
+          <li class="item"><a href="/home" style="color: blue;">Home</a></li>
+          <li class="item"><a href="/about">about</a></li>
+          <li class="item"><a href="/profile">profile</a></li>
+          <li class="item"><a href="/contact">contact</a></li>
+        </ul>
+      </nav>
+  </section>
+  
+
+    <section id="about">
+      <div class="card">
+        <div class="card-header">
+          <h1 class="card-title">Indomie</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, ab?</p>
+          <p>Rp. 30000</p>
+        </div>
+        <div class="card-footer">
+          <button class="btn btn-primary">Beli</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

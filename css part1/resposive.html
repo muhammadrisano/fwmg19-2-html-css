@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* desktop */
+    .container{
+      width: 980px;
+      background-color: lightblue;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .title{
+      text-align: center;
+      font-size: 32px;
+    }
+    /* table */
+    @media screen and (max-width: 768px){
+      .container{
+        width: 650px;
+        background-color: lightpink;
+      }
+    }
+
+    /* mobile */
+    @media screen and (max-width: 576px){
+      .container{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        background-color: lightsalmon;
+      }
+      .title{
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">belajar html</h1>
+    <p class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus possimus nesciunt rerum soluta, error repellendus ea amet quos vitae quo, praesentium itaque officia qui similique aut, vero expedita iusto quis provident facere architecto voluptas. Deleniti cum quae eum voluptatum? Suscipit modi asperiores quisquam? Soluta atque nulla beatae sunt? Quam architecto expedita quas beatae quos officiis atque autem iste velit molestiae placeat, molestias est culpa provident magni nisi labore ab. Eveniet tempore sequi possimus, itaque rerum nulla dolor vel non nemo dolores nostrum! Ea possimus deleniti at fugiat corrupti amet exercitationem, eum eaque officiis soluta, veritatis voluptatem accusantium ipsam ipsa voluptatum.</p>
+  </div>
+</body>
+</html>
